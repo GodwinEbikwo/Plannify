@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { Features, fourdata } from "../data/index";
 
 export default function Four() {
   return (
@@ -20,8 +21,9 @@ export default function Four() {
           <div className="imgfour--container">
             <div className="card hide-for-mobile"></div>
 
-            <QuestionTwo />
-            <QuestionThree />
+            {fourdata.map((data, _) => (
+              <Features key={data.id} title={data.title} />
+            ))}
 
             <Image src="/fly.png" width={2160} height={2160} alt="hands" />
           </div>
@@ -30,26 +32,3 @@ export default function Four() {
     </section>
   );
 }
-
-const QuestionTwo = () => {
-  return (
-    <>
-      <div className="one two hide-for-mobile ">
-        <div className="info-inner flex flex-ai-c flex-jc-c flex-fd-c">
-          <h3>Tell you cat bye and hello Greece!</h3>
-        </div>
-      </div>
-    </>
-  );
-};
-const QuestionThree = () => {
-  return (
-    <>
-      <div className="one three hide-for-mobile ">
-        <div className="info-inner flex flex-ai-c flex-jc-c flex-fd-c">
-          <h3>Cross check and make sure you have all the required documents</h3>
-        </div>
-      </div>
-    </>
-  );
-};

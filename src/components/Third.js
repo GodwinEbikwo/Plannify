@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { Feature, Fdata } from "../data/index";
+import { Features, threedata } from "../data/index";
 
 const Third = () => {
   return (
@@ -21,14 +21,15 @@ const Third = () => {
 
           <div className="imgthree--container">
             <div className="card hide-for-mobile"></div>
-            <QuestionOne />
-            <QuestionFour />
             <Image
               src="/girl.png"
               width={2160}
               height={2160}
               alt="sally-image"
             />
+            {threedata.map((data, _) => (
+              <Features key={data.id} title={data.title} />
+            ))}
           </div>
         </div>
       </div>
@@ -37,27 +38,3 @@ const Third = () => {
 };
 
 export default Third;
-
-const QuestionOne = () => {
-  return (
-    <>
-      <div className="one hide-for-mobile ">
-        <div className="info-inner flex flex-ai-c flex-jc-c flex-fd-c">
-          <h3>Fill in the required information and send it.</h3>
-        </div>
-      </div>
-    </>
-  );
-};
-
-const QuestionFour = () => {
-  return (
-    <>
-      <div className="one four hide-for-mobile ">
-        <div className="info-inner flex flex-ai-c flex-jc-c flex-fd-c">
-          <h3>Relax and wait for your information to be verified in minutes</h3>
-        </div>
-      </div>
-    </>
-  );
-};

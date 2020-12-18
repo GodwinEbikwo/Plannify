@@ -56,7 +56,7 @@ export const Features = ({ title }) => {
   );
 };
 
-export const fdata = [
+export const twodata = [
   {
     id: 1,
     title: "Search the location",
@@ -72,5 +72,27 @@ export const fdata = [
   {
     id: 4,
     title: "Then decide",
+  },
+];
+
+export const threedata = [
+  {
+    id: 1,
+    title: "Fill in the required information and send it.",
+  },
+  {
+    id: 2,
+    title: "Relax and wait for your information to be verified in minutes",
+  },
+];
+
+export const fourdata = [
+  {
+    id: 1,
+    title: "Cross check and make sure you have all the required documents.",
+  },
+  {
+    id: 2,
+    title: "Tell your cat bye and say hello Greece!",
   },
 ];

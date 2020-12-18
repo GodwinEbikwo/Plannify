@@ -6,7 +6,7 @@ import {
   QuestionThree,
   QuestionFour,
   Features,
-  fdata,
+  twodata,
 } from "../data/index";
 
 export default function Two() {
@@ -33,7 +33,7 @@ export default function Two() {
             <QuestionTwo />
             <QuestionThree />
             <QuestionFour />
-            {fdata.map((data, _) => (
+            {twodata.map((data, _) => (
               <Features key={data.id} title={data.title} />
             ))}
             <div className="imgself">
