@@ -98,7 +98,9 @@
       // }
       @include for-size(phone-only) {
         max-width: 400px;
-        margin-left: 20px;
+        .imgself {
+          margin-left: 37px;
+        }
       }
       @media only screen and (min-device-width: 540px) and (max-device-width: 600px) {
         max-width: 400px;
@@ -133,7 +135,7 @@
   border: 1px solid #eaeaea;
   box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.06);
   padding: 1rem;
-  background-color: #f1efef;
+  background-color: #fafbfc;
 
   .info-inner {
     display: flex;

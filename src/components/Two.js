@@ -36,7 +36,15 @@ export default function Two() {
             {fdata.map((data, _) => (
               <Features key={data.id} title={data.title} />
             ))}
-            <Image src="/man.png" width={2160} height={2160} alt="hands" />
+            <div className="imgself">
+              <Image
+                src="/man.png"
+                width={2160}
+                height={2160}
+                alt="hands"
+                className="imgself"
+              />
+            </div>
           </div>
         </div>
       </div>

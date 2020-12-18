@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { Feature, Fdata } from "../data/index";
 
 const Third = () => {
   return (
