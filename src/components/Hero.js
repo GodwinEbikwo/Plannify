@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Three from "./Three";
 
 export default function Hero() {
   return (

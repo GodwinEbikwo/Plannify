@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-export default function Three() {
+const Three = () => {
   return (
     <section
       className="Three flex flex-ai-c flex-jc-c flex-fd-c"
@@ -28,7 +28,9 @@ export default function Three() {
       </div>
     </section>
   );
-}
+};
+
+export default Three;
 
 const QuestionOne = () => {
   return (
