@@ -21,8 +21,6 @@ export default function Three() {
           <div className="imgthree--container">
             <div className="card hide-for-mobile"></div>
             <QuestionOne />
-            {/* <QuestionTwo /> */}
-            {/* <QuestionThree /> */}
             <QuestionFour />
             <Image src="/girl.png" width={2160} height={2160} alt="hands" />
           </div>
@@ -44,28 +42,6 @@ const QuestionOne = () => {
   );
 };
 
-const QuestionTwo = () => {
-  return (
-    <>
-      <div className="one two hide-for-mobile ">
-        <div className="info-inner flex flex-ai-c flex-jc-c flex-fd-c">
-          <h3>Relax and wait for your information to be verified in minutes</h3>
-        </div>
-      </div>
-    </>
-  );
-};
-const QuestionThree = () => {
-  return (
-    <>
-      <div className="one three hide-for-mobile ">
-        <div className="info-inner flex flex-ai-c flex-jc-c flex-fd-c">
-          <h3>Ensure you have a visa for that country</h3>
-        </div>
-      </div>
-    </>
-  );
-};
 const QuestionFour = () => {
   return (
     <>
