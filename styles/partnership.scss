@@ -1,0 +1,22 @@
+.Partnership {
+  border-top: 0.8px solid #eaeaea;
+  border-bottom: 0.8px solid #eaeaea;
+  .logo-container {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 0.5em;
+    @include for-size(tablet-portrait-up) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    img {
+      filter: grayscale(100%);
+    }
+    span {
+      color: rgb(201, 194, 194);
+      display: flex;
+      justify-content: center;
+      align-content: center;
+    }
+  }
+}

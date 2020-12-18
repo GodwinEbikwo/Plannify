@@ -125,3 +125,26 @@
     }
   }
 }
+
+.featurecard {
+  position: relative;
+  margin-bottom: 30px;
+  border-radius: 0.3em;
+  border: 1px solid #eaeaea;
+  box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.06);
+  padding: 1rem;
+  background-color: #f1efef;
+
+  .info-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h3 {
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      font-size: 1rem;
+      letter-spacing: -0.03em;
+    }
+  }
+}

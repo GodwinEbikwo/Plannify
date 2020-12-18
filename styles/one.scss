@@ -16,7 +16,7 @@
 .card {
   padding: 20px;
   border-radius: 5px;
-  border: 0.5px solid #eaeaea;
+  border: 1px solid #dddada;
   text-align: left;
   flex: 1 1;
   display: flex;
@@ -26,12 +26,13 @@
     font-weight: 600;
     font-size: 1.125rem;
     letter-spacing: -0.04em;
+    color: $whiteBlack;
     @include for-size(phone-only) {
-      font-size: 4.9vw;
+      font-size: 4.5vw;
     }
   }
   p {
-    font-size: 16px;
+    font-size: 1rem;
     flex: 1 1;
     &::first-line {
       background: #fafbfc;

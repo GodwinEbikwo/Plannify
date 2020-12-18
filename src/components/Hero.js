@@ -29,7 +29,7 @@ export default function Hero() {
           </div>
 
           <div className="img-container">
-            <Image src="/hands.png" width={1920} height={1080} alt="hands" />
+            <Image src="/hands.png" width={1920} height={1080} alt="hand" />
           </div>
         </div>
       </div>

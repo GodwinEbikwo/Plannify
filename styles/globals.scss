@@ -8,6 +8,7 @@
 @import "./two.scss";
 @import "./three.scss";
 @import "./four.scss";
+@import "./partnership.scss";
 @import "./footer.scss";
 
 *,
@@ -282,7 +283,7 @@ p {
     margin: 0px 0px 40px;
     line-height: 1.6;
     @include for-size(desktop-up) {
-      font-size: 1.25rem;
+      font-size: 1.2rem;
     }
   }
 }

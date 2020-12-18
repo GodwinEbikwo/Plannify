@@ -1,5 +1,13 @@
 import React from "react";
 import Image from "next/image";
+import {
+  QuestionOne,
+  QuestionTwo,
+  QuestionThree,
+  QuestionFour,
+  Features,
+  fdata,
+} from "../data/index";
 
 export default function Two() {
   return (
@@ -25,6 +33,9 @@ export default function Two() {
             <QuestionTwo />
             <QuestionThree />
             <QuestionFour />
+            {fdata.map((data, _) => (
+              <Features key={data.id} title={data.title} />
+            ))}
             <Image src="/man.png" width={2160} height={2160} alt="hands" />
           </div>
         </div>
@@ -32,49 +43,3 @@ export default function Two() {
     </section>
   );
 }
-
-const QuestionOne = () => {
-  return (
-    <>
-      <div className="one hide-for-mobile ">
-        <div className="info-inner flex flex-ai-c flex-jc-c flex-fd-c">
-          <h3>Search the place</h3>
-        </div>
-      </div>
-    </>
-  );
-};
-
-const QuestionTwo = () => {
-  return (
-    <>
-      <div className="one two hide-for-mobile ">
-        <div className="info-inner flex flex-ai-c flex-jc-c flex-fd-c">
-          <h3>Look up possible dates</h3>
-        </div>
-      </div>
-    </>
-  );
-};
-const QuestionThree = () => {
-  return (
-    <>
-      <div className="one three hide-for-mobile ">
-        <div className="info-inner flex flex-ai-c flex-jc-c flex-fd-c">
-          <h3>Ensure you have a visa for that country</h3>
-        </div>
-      </div>
-    </>
-  );
-};
-const QuestionFour = () => {
-  return (
-    <>
-      <div className="one four hide-for-mobile ">
-        <div className="info-inner flex flex-ai-c flex-jc-c flex-fd-c">
-          <h3>Then decide</h3>
-        </div>
-      </div>
-    </>
-  );
-};

@@ -6,6 +6,7 @@ import One from "../src/components/One";
 import Two from "../src/components/Two";
 import Third from "../src/components/Third";
 import Four from "../src/components/Four";
+import Partnership from "../src/components/Partnership";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
           />
         </Head>
         <Hero />
+        <Partnership />
         <One />
         <Two />
         <Third />

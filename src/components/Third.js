@@ -22,7 +22,12 @@ const Third = () => {
             <div className="card hide-for-mobile"></div>
             <QuestionOne />
             <QuestionFour />
-            <Image src="/girl.png" width={2160} height={2160} alt="hands" />
+            <Image
+              src="/girl.png"
+              width={2160}
+              height={2160}
+              alt="sally-image"
+            />
           </div>
         </div>
       </div>
