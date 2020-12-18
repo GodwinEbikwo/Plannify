@@ -1,4 +1,6 @@
 .Three {
+  background: #fafbfc;
+  border-bottom: 0.8px solid #eaeaea;
   .inner-containers {
     .imgthree--container {
       position: relative;
@@ -16,7 +18,7 @@
         @include for-size(desktop-up) {
           position: absolute;
           top: 50%;
-          left: 43%;
+          left: 50%;
           transform: translate(-50%, -50%);
         }
       }
@@ -24,7 +26,7 @@
       .one {
         position: absolute;
         top: -10px;
-        left: -250px;
+        left: -220px;
         width: 275px;
         height: 125px;
         background: linear-gradient(
@@ -57,17 +59,17 @@
       }
 
       .one.three {
-        left: 310px;
+        left: 350px;
       }
 
       .one.four {
         top: 260px;
-        left: 310px;
+        left: 350px;
       }
 
       @include for-size(phone-only) {
         max-width: 400px;
-        margin-left: 20px;
+        margin-left: 0px;
       }
       @media only screen and (min-device-width: 540px) and (max-device-width: 600px) {
         max-width: 400px;
@@ -76,16 +78,16 @@
 
       @media only screen and (min-device-width: 768px) and (max-device-width: 800px) and (-webkit-min-device-pixel-ratio: 2) {
         max-width: 400px;
-        margin-left: 190px;
+        margin-left: 160px;
       }
 
       @include for-size(tablet-landscape-up) {
         max-width: 400px;
-        margin-left: 290px;
+        margin-left: 250px;
       }
       @include for-size(desktop-up) {
         max-width: 400px;
-        margin-left: 200px;
+        margin-left: 160px;
       }
       @include for-size(big-desktop-up) {
         max-width: 400px;

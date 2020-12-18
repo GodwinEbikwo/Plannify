@@ -4,6 +4,8 @@ import Layout, { siteTitle } from "../src/components/layout";
 import Hero from "../src/components/Hero";
 import One from "../src/components/One";
 import Two from "../src/components/Two";
+import Three from "../src/components/three";
+import Four from "../src/components/four";
 
 export default function Home() {
   return (
@@ -19,6 +21,8 @@ export default function Home() {
         <Hero />
         <One />
         <Two />
+        <Three />
+        <Four />
       </Layout>
     </SmoothScrollProvider>
   );

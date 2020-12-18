@@ -10,7 +10,7 @@ export default function One() {
         <div className="inner-containers">
           <h1>
             Plannify creates an easy way for travellers to travel and not worry
-            about paying the full amount.
+            about paying the full <span className="accent-line"> amount.</span>
           </h1>
           <h3>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id quis,

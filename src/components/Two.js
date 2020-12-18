@@ -25,7 +25,6 @@ export default function Two() {
             <QuestionTwo />
             <QuestionThree />
             <QuestionFour />
-            <div className="man hide-for-mobile"></div>
             <Image src="/man.png" width={2160} height={2160} alt="hands" />
           </div>
         </div>

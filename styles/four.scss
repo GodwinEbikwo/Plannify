@@ -1,21 +1,19 @@
-.Two {
+.Four {
+  background: #fafbfc;
+  border-bottom: 0.8px solid #eaeaea;
   .inner-containers {
     h1 {
-      background: linear-gradient(
-        75deg,
-        rgb(137, 131, 186),
-        rgb(158, 152, 204) 20%,
-        rgb(194, 154, 190) 38%,
-        rgb(225, 151, 176) 56%,
-        rgb(255, 154, 125) 74%,
-        rgb(255, 180, 103) 84%,
-        rgb(255, 218, 142)
+      background-image: linear-gradient(
+        -225deg,
+        #77ffd2 0%,
+        #6297db 48%,
+        #1eecff 100%
       );
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-    .imgtwo--container {
+    .imgfour--container {
       position: relative;
       .card {
         position: absolute;
@@ -24,15 +22,14 @@
         width: 30vw;
         height: 30vw;
         border-radius: 50%;
-        background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
-        // background-color: #63a4ff;
-        // background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
+        background-color: #63a4ff;
+        background-image: linear-gradient(-225deg, #b7f8db 0%, #50a7c2 100%);
         z-index: -1;
 
         @include for-size(desktop-up) {
           position: absolute;
           top: 50%;
-          left: 43%;
+          left: 50%;
           transform: translate(-50%, -50%);
         }
       }
@@ -40,7 +37,7 @@
       .one {
         position: absolute;
         top: -10px;
-        left: -250px;
+        left: -220px;
         width: 275px;
         height: 125px;
         background: linear-gradient(
@@ -73,32 +70,17 @@
       }
 
       .one.three {
-        left: 310px;
+        left: 350px;
       }
 
       .one.four {
         top: 260px;
-        left: 310px;
+        left: 350px;
       }
 
-      // .man {
-      //   width: 500px;
-      //   background-image: url("/man.png");
-      //   background-position: 50% 100%;
-      //   background-repeat: no-repeat;
-      //   object-fit: contain;
-      //   z-index: 5;
-      //   position: absolute;
-      //   top: 50%;
-      //   left: 50%;
-      //   transform: translate(-50%, -50%);
-
-      //   @include for-size(desktop-up) {
-      //   }
-      // }
       @include for-size(phone-only) {
         max-width: 400px;
-        margin-left: 20px;
+        margin-left: 0px;
       }
       @media only screen and (min-device-width: 540px) and (max-device-width: 600px) {
         max-width: 400px;
@@ -107,16 +89,16 @@
 
       @media only screen and (min-device-width: 768px) and (max-device-width: 800px) and (-webkit-min-device-pixel-ratio: 2) {
         max-width: 400px;
-        margin-left: 190px;
+        margin-left: 160px;
       }
 
       @include for-size(tablet-landscape-up) {
         max-width: 400px;
-        margin-left: 290px;
+        margin-left: 250px;
       }
       @include for-size(desktop-up) {
         max-width: 400px;
-        margin-left: 200px;
+        margin-left: 160px;
       }
       @include for-size(big-desktop-up) {
         max-width: 400px;
