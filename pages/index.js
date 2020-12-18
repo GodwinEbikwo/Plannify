@@ -7,6 +7,7 @@ import Two from "../src/components/Two";
 import Third from "../src/components/Third";
 import Four from "../src/components/Four";
 import Partnership from "../src/components/Partnership";
+import CTA from "../src/components/CTA";
 
 export default function Home() {
   return (
@@ -22,9 +23,14 @@ export default function Home() {
         <Hero />
         <Partnership />
         <One />
+        <CTA
+          title=" Join thousands of travellers using plannify to travel around the
+            world"
+        />
         <Two />
         <Third />
         <Four />
+        <CTA title="Ready for that dream vacation? Join now to see if you qualify" />
       </Layout>
     </SmoothScrollProvider>
   );
