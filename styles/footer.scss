@@ -58,9 +58,13 @@
         margin-top: 0px;
         margin-bottom: 20px;
         margin-left: 0px;
-        color: $whiteBlack;
+        color: #9b9999;
         text-decoration: none;
         text-transform: capitalize;
+        transition: color 300ms linear;
+        &:hover {
+          color: #000;
+        }
       }
     }
 

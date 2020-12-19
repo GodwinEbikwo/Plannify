@@ -10,6 +10,8 @@
 @import "./three.scss";
 @import "./four.scss";
 @import "./partnership.scss";
+@import "./testimonials.scss";
+@import "./newsletter.scss";
 @import "./footer.scss";
 
 *,
@@ -92,6 +94,51 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+input[type="email"],
+input[type="text"] {
+  appearance: none;
+}
+
+input {
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  appearance: textfield;
+  -webkit-rtl-ordering: logical;
+  cursor: text;
+  margin: 0em;
+  padding: 1px 2px;
+  border-style: inset;
+  border-image: initial;
+  line-height: 25px;
+
+  &:focus {
+    border: none;
+  }
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-size: 100%;
+}
+
+[role="button"],
+button {
+  cursor: pointer;
 }
 
 img {

@@ -18,17 +18,9 @@ export default function Footer() {
               </a>
 
               <div className="block-82">
-                {/* <a href="/">
-                  <Image src="/mc.svg" width={33} height={33} alt="image" />
+                <a href="/" className="btn">
+                  Apply now
                 </a>
-                <a href="/">
-                  <Image
-                    src="/twitter.svg"
-                    width={26}
-                    height={26}
-                    alt="image"
-                  />
-                </a> */}
               </div>
             </div>
           </div>

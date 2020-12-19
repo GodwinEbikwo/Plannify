@@ -6,7 +6,7 @@ export default function Testimonials() {
       <div className="container container--pall">
         <div className="inner-containers">
           <h1>
-            Here what our <span className="accent-line"> customers</span> have
+            See what our <span className="accent-line"> customers</span> have
             been saying about us
           </h1>
         </div>

@@ -8,6 +8,8 @@ import Third from "../src/components/Third";
 import Four from "../src/components/Four";
 import Partnership from "../src/components/Partnership";
 import CTA from "../src/components/CTA";
+import Testimonials from "../src/components/Testimonials";
+import Newsletter from "../src/components/Newsletter";
 
 export default function Home() {
   return (
@@ -31,6 +33,8 @@ export default function Home() {
         <Third />
         <Four />
         <CTA title="Ready for that dream vacation? Join now to see if you qualify" />
+        <Testimonials />
+        <Newsletter />
       </Layout>
     </SmoothScrollProvider>
   );
