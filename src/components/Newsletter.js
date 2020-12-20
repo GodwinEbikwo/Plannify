@@ -1,9 +1,8 @@
 import React, { useRef, useState } from "react";
-import Subscribe from "./Subscribe";
 
 export default function Newsletter() {
   const inputEl = useRef(null);
-  // 2. Hold a message in state to handle the response from our API.
+
   const [message, setMessage] = useState("");
 
   const subscribe = async (e) => {
@@ -64,20 +63,8 @@ export default function Newsletter() {
                 Subscribe
               </button>
             </form>
-            {/* <input
-              type="email"
-              aria-label="Email for newsletter"
-              placeholder="letmetravel@plannify.com"
-              autoComplete="email"
-              required
-              className="input"
-            />
-            <button className="flex flex-ai-c flex-jc-c button">
-              Subscribe
-            </button> */}
           </div>
         </div>
-        {/* <Subscribe /> */}
       </div>
     </section>
   );
