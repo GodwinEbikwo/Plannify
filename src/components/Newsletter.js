@@ -1,5 +1,4 @@
 import React from "react";
-import Subscribe from "./Subscribe";
 
 export default function Newsletter() {
   return (
@@ -28,7 +27,7 @@ export default function Newsletter() {
             </button>
           </div>
         </div>
-        <Subscribe />
+        {/* <Subscribe /> */}
       </div>
     </section>
   );
