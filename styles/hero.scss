@@ -24,12 +24,12 @@
   }
 
   .hero__content {
-    max-width: 80rem;
+    max-width: 900px;
     margin: 0 auto;
     width: 100%;
 
     @include for-size(phone-only) {
-      max-width: 100rem;
+      max-width: 1024px;
     }
 
     h1 {
@@ -73,7 +73,7 @@
     .img-container {
       @include for-size(desktop-up) {
         width: 450px;
-        margin-left: 280px;
+        margin-left: 220px;
       }
       position: relative;
       transition: all 300ms ease-in-out;

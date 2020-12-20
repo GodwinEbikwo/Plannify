@@ -1,6 +1,36 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+import Subscribe from "./Subscribe";
 
 export default function Newsletter() {
+  const inputEl = useRef(null);
+  // 2. Hold a message in state to handle the response from our API.
+  const [message, setMessage] = useState("");
+
+  const subscribe = async (e) => {
+    e.preventDefault();
+
+    const res = await fetch("/api/subscribe", {
+      body: JSON.stringify({
+        email: inputEl.current.value,
+      }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+      method: "POST",
+    });
+
+    const { error } = await res.json();
+
+    if (error) {
+      setMessage(error);
+
+      return;
+    }
+
+    inputEl.current.value = "";
+    setMessage("Success! 🎉 You are now subscribed to the newsletter.");
+  };
+
   return (
     <section
       data-scroll-section
@@ -14,7 +44,27 @@ export default function Newsletter() {
             new articles and discounts we provide. Don't miss out!
           </h3>
           <div className="input-container">
-            <input
+            <form onSubmit={subscribe}>
+              <label htmlFor="email-input">{"Email Address"}</label>
+              <input
+                aria-label="Email for newsletter"
+                id="email-input"
+                name="email"
+                placeholder="you@awesome.com"
+                ref={inputEl}
+                type="email"
+                className="input"
+              />
+              <div>
+                {message
+                  ? message
+                  : `we only send emails when new content is posted. No spam.`}
+              </div>
+              <button type="submit" className="flex flex-ai-c flex-jc-c button">
+                Subscribe
+              </button>
+            </form>
+            {/* <input
               type="email"
               aria-label="Email for newsletter"
               placeholder="letmetravel@plannify.com"
@@ -24,7 +74,7 @@ export default function Newsletter() {
             />
             <button className="flex flex-ai-c flex-jc-c button">
               Subscribe
-            </button>
+            </button> */}
           </div>
         </div>
         {/* <Subscribe /> */}

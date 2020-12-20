@@ -12,8 +12,6 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <meta content="IE=edge" httpEquiv="X-UA-Compatible" />
-          <meta content="width=device-width, initial-scale=1" name="viewport" />
           <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
