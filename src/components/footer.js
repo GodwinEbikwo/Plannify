@@ -43,7 +43,7 @@ export default function Footer() {
 
             <div className="block-84">
               <a href="/" className="b-link">
-                UNLIMITED SHIT TO DOWNLOAD
+                PRESS & MEDIA KIT
               </a>
             </div>
           </div>
