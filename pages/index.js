@@ -46,13 +46,21 @@ export default function Home() {
         <CTA
           title=" Join thousands of travellers using plannify to travel around the
             world"
+          label="Apply Now to get started"
         />
         <Two />
         <Third />
         <Four />
-        <CTA title="Ready for that dream vacation? Join now to see if you qualify" />
+        <CTA
+          title="Ready for that dream vacation? Join now to see if you qualify"
+          label="Check to see if you qualify"
+        />
         <Testimonials />
         <Newsletter />
+        <CTA
+          title="Don't think how, think where and when with plannify"
+          label="Apply now with plannify"
+        />
       </Layout>
     </SmoothScrollProvider>
   );

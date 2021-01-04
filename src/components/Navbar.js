@@ -24,12 +24,12 @@ const Navbar = () => {
 
   const navbarStyles = {
     position: "sticky",
-    height: "60px",
+    height: "80px",
     width: "100%",
     backgroundColor: "rgba(255,255,255,0.5)",
     textAlign: "center",
     transition: "top 0.4s",
-    backdropFilter: " blur(8px)",
+    backdropFilter: " saturate(180%) blur(8px)",
   };
 
   return (

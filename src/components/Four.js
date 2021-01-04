@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { Features, fourdata } from "../data/index";
+import { Features, fourdata, QuestionOne, QuestionFour } from "../data/index";
 
 export default function Four() {
   return (
@@ -11,7 +11,7 @@ export default function Four() {
       <div className="container container--pall">
         <div className="inner-containers">
           <h1>
-            Pack your <span className="accent-line">bags</span>
+            Pack your <span className="accent-line">luggage</span>
           </h1>
           <h3>
             After you have been accepted into the program, pack your bags and
@@ -24,7 +24,9 @@ export default function Four() {
             {fourdata.map((data, _) => (
               <Features key={data.id} title={data.title} />
             ))}
+            <QuestionOne />
 
+            <QuestionFour />
             <Image src="/fly.png" width={2160} height={2160} alt="hands" />
           </div>
         </div>

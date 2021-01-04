@@ -4,6 +4,9 @@
     position: relative;
     padding-top: 1.0625rem;
     padding-bottom: 1.0625rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   &__logo {

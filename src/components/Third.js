@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { Features, threedata } from "../data/index";
+import { Features, threedata, QuestionTwo, QuestionThree } from "../data/index";
 
 const Third = () => {
   return (
@@ -21,6 +21,8 @@ const Third = () => {
 
           <div className="imgthree--container">
             <div className="card hide-for-mobile"></div>
+            <QuestionTwo />
+            <QuestionThree />
             <Image
               src="/girl.png"
               width={2160}

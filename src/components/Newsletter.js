@@ -37,7 +37,7 @@ export default function Newsletter() {
     >
       <div className="container container--pall">
         <div className="inner-containers">
-          <h1>Subscribe to our newsletters</h1>
+          <h1>Subscribe to our newsletter</h1>
           <h3>
             Get emails from us about travelling, lifestyle, and early access to
             new articles and discounts we provide. Don't miss out!
@@ -54,10 +54,10 @@ export default function Newsletter() {
                 type="email"
                 className="input"
               />
-              <div>
+              <div style={{ margin: ".5rem 0", color: "gray" }}>
                 {message
                   ? message
-                  : `we only send emails when new content is posted. No spam.`}
+                  : `We only send emails when new content is posted. No spam.`}
               </div>
               <button type="submit" className="flex flex-ai-c flex-jc-c button">
                 Subscribe
