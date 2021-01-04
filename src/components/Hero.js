@@ -19,7 +19,7 @@ export default function Hero() {
           <h3>
             Travelling can't get any better at the moment if you ask me. It
             doesn’t need to be a headache, and by using Travel now, all your
-            worries are gone. instantly
+            worries are gone instantly
           </h3>
 
           <div className="hero__btn-container">
