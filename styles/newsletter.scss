@@ -44,6 +44,10 @@
         background-color: #0070f3;
         writing-mode: horizontal-tb !important;
         text-rendering: auto;
+
+        @include for-size(phone-only) {
+          top: 1.62rem;
+        }
       }
     }
   }
